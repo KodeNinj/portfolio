@@ -1,0 +1,156 @@
+.main_project{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: 10px 5%;
+    width: 90%;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.219);
+}
+.projectbody{
+    width: 100%;
+    overflow-x: hidden;
+}
+.proj_left{
+    flex: 1.0;
+    /* margin-left: -200px; */
+}
+.proj_right{
+    flex: 1;
+    /* margin-left: -250px; */
+}
+
+.title, 
+.platform, 
+.Tools, 
+.Prototype{
+    display: flex;
+    /* background-color: red; */
+    /* margin-bottom: 10px; */
+    align-items: center;
+    padding: 15px 25px;
+
+}
+.title h3, 
+.platform h3, 
+.Tools h3, 
+.Prototype h3, 
+.Description h3{
+    margin: 0;
+}
+.title h4, 
+.platform h4, 
+.Tools h4, 
+.Prototype h4, 
+.Description h4{
+    margin: 0;
+    margin-left: 20px;
+}
+
+.Prototype a:hover button{
+    background-color: #00f6ed;
+    transition:  background 2s ease ;
+    color: #453f78;
+}
+.Prototype button{
+    padding: 15px 25px;
+    width: 100%;
+    font-weight: bold;
+    transition:  background 2s ease ;
+    border: none;
+    background-color: #453f78;
+    border-radius: 5px;
+    color: #fff;
+}
+.Description p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 25px;
+    width: 70%;
+
+}
+.Description p span{
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.main_project .proj_left img{
+    padding: 20px 35px;
+    /* margin-left: 10%; */
+    /* width: 400px; */
+    min-width: 60%;
+    height: 450px;
+    border-radius: 80px;
+}
+.switch{
+    display: flex;
+    padding: 20px 25px;
+    justify-content: center;
+}
+.switch .frontend{
+    flex: 1;
+    background-color: #453f78;
+    padding: 15px 25px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.switch .uiux{
+    flex: 1;
+    background-color: #453f78;
+    padding: 15px 25px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+.switch .uiux.inactive {
+    flex: 1;
+    background-color: #c4c4c4;
+    padding: 15px 25px;
+    color: #fff;
+    text-align: center;
+}
+.switch .frontend.active{
+    background-color: #453f78;
+}
+.switch .frontend.inactive{
+    background-color: #c4c4c4   ;
+}
+.switch .uiux.active{
+    background-color: #453f78;
+}
+button{
+    cursor: pointer;
+}
+.switch .uiux.inactive{
+    background-color: #c4c4c4   ;
+}
+.project_container .showme{
+    display: block;
+}
+.project_container .hideme{
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    .main_project{
+        flex-direction: column;
+    }
+    .main_project .proj_left img{
+        max-width: 100%;
+        height: 100%;
+    }
+    .switch{
+        padding: 10px 35px;
+        flex-direction: column;
+    }
+    .switch .frontend h3, .switch .uiux h3{
+        font-size: 16px;
+    }
+    .Prototype button{
+        width: 50%;
+        margin-left: 25%;
+    }
+    .Prototype a{
+        width: 100%;
+    }
+}

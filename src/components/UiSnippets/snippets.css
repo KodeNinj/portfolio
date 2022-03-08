@@ -1,0 +1,104 @@
+.snippet_container{
+    width: 100%;
+    overflow-x: hidden;
+    padding: 20px 20px 50px 20px;
+    background-color: #01172f;
+}
+.flexMe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    overflow-x: hidden;
+}
+.flexMe .left{
+    width: 250px;
+    height: 530px;
+    background-image: url(https://cms-assets.tutsplus.com/cdn-cgi/image/width=360/uploads/users/158/posts/34500/final_image/FitnessApp0.jpg);
+    background-position: center;
+    border-radius: 20px;
+}
+.flexMe .right .up{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+.flexMe .right .up .upleft{
+    width: 250px;
+    height: 250px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background-image: url(https://miro.medium.com/max/1838/0*rx6vIedlRQlvxPTE);
+    background-position: center;
+    background-size: cover;
+}
+.flexMe .right .up .upright{
+    width: 250px;
+    height: 250px;
+    background-image: url(https://designshack.net/wp-content/uploads/mobile-app-template.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-left: 30px;
+}
+.flexMe .right .down{
+    width: 530px;
+    height: 250px;
+    margin-left: 30px;
+    background-image: url(https://w3layouts.com/wp-content/uploads/2020/05/UI-kit-1-990x497.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.flexMe .lastline{
+    width: 250px;
+    height: 530px;
+    margin-left: 30px;
+    border-radius: 20px;
+    background-image: url(https://cms-assets.tutsplus.com/uploads/users/158/posts/34242/image/MMAppInterface0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.snippet_container h4{
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 20%;
+    margin-top: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 40%;
+    border-radius: 10px;
+    background-color: #00f6ed;
+    color: #01172f;
+}
+@media only screen and (max-width: 800px){
+    .flexMe{
+        flex-direction: column;
+    }
+    .flexMe .left{
+        margin-bottom: 15px;
+    }
+    .flexMe .right .up{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 0;
+   }
+   .flexMe .right .down{
+    display: none;
+   }
+   .flexMe .right .up .upleft{
+       margin: 0;
+       margin-bottom: 15px;
+   }
+   .flexMe .right .up .upright{
+       margin: 0;
+       margin-bottom: 15px;
+   }
+   .flexMe .lastline{
+       margin: 0;
+   }
+}

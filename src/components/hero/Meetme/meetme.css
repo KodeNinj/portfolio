@@ -1,0 +1,195 @@
+.role{
+    display: flex;
+    color: #fff;
+}
+.opening{
+    color: #fff;
+}
+.role div{
+    margin-left: 10px;
+    color: #fff;
+}
+.body{
+    margin-left: 70px;
+    color: #fff;
+}
+.close{
+    margin-left:55px;
+    color: #fff;
+}
+.roletext{
+    height: 55px;
+    overflow: hidden;
+    
+}
+.name span{
+    color: #00f6ed;
+}
+@keyframes move {
+    50%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(-120px);
+    }
+}
+.roletext h2{
+    height: 30px;
+    color: #f9e900;
+    animation: move 3s ease-in-out alternate infinite;
+
+}
+.meetbody h2{
+    font-size: 30px;
+}
+.meetbody{
+    display: flex;
+    flex-direction: column ;
+    margin-bottom: 90%;
+    /* align-items: center; */
+}
+.meetbody div{
+    margin-bottom: 10px;
+}
+.herobody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+
+
+}
+.herobody img{
+    width: 70%;
+    margin-left: 10%;
+    margin-bottom: 80%;
+}
+.btn button{
+    padding: 15px 75px;
+    border-radius: 10px;
+    margin: 20px 15px 0 15px;
+    z-index: 5;
+    background-color: #00f6ed;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    cursor: pointer;
+    transition: color 1s ease, background 1s ease ;
+}
+.btn .cv{
+    background-color: transparent;
+    border:2px solid #ffffff;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    z-index: 5;
+    transition: color 1s ease, background 1s ease;
+}
+.btn button:hover{
+    background-color: #fff;
+    color: #333;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 20px;
+    width: 100px;
+    background-color: #0f1108;
+    color: #fff;
+    border-radius: 0 40px 40px 0;
+    position: absolute;
+    left: -20px;
+    bottom: 150px;
+    z-index: 2;
+}
+.socials i{
+    padding: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: #333;
+    font-weight: bold;
+    /* text-align: center; */
+    height: 20px;
+    background-color: #00f6ed;
+    cursor: pointer;
+    border-radius: 500px;
+    transition: background 2s ease;
+}
+.socials i:hover{
+    background: #fff;
+    transition: background 2s ease;
+}
+@media only screen  and (max-width: 600px) {
+    .socials{
+        display: none;
+    }
+    .btn button, .btn .cv{
+        position: relative;
+        width: 80%;
+        /* margin-left: -5%; */
+
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 15px 25px;
+
+    }
+    .btn button{
+        border: none;
+        padding: 30px;
+        width: 90%;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    .btn .cv{
+        padding: 30px;
+        width: 90%;
+        margin-left: 10%;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-left: 10%;
+        /* background-color: red; */
+    }
+    .herobody{
+        flex-direction: column;
+        width: 95%;
+        /* margin: 0; */
+    }
+    
+    .meetbody h2{
+        font-size: 35px;
+    }
+    .roletext h2{
+        height: 35px;
+        font-size: 20px;
+        /* background: red; */
+        
+    
+    }
+    .herobody img{
+        display: none;
+    }
+    .meetbody{
+        /* width: 100%; */
+        /* margin-left: % */
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .opening{
+        margin-left: 30px;
+    }
+    /* .name, .role{
+        margin-left: -20px;
+    } */
+}

@@ -1,0 +1,38 @@
+.navlinks ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+    align-items: center;
+    color:aliceblue;
+    height: 40px;
+}
+.navlinks ul li{
+    margin-left: 30px;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 100%;
+}
+.navlinks ul li.active{
+    border-bottom: 2px solid #00f6ed;
+    color: #00f6ed;
+}
+.navlinks ul li:hover{
+    color: #00f6ed;
+}
+.Navheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+}
+.navlinks{
+    flex: 2;
+    
+}
+@media only screen and (max-width: 600px) {
+    .navlinks{
+        visibility: hidden;
+    }
+}
