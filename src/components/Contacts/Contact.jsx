@@ -2,7 +2,6 @@
 import React from 'react'
 import HeaderDesign from '../Skills/donut'
 import "./contact.css"
-import Map from "./map.jpeg"
 
 const Contact = () => {
   return (
@@ -18,11 +17,11 @@ const Contact = () => {
             <div className="radiocontainer">
                 <div className='emp'>
                     <input type="radio" name="radio" id="employer" />
-                    <label for="employer">Employer</label>
+                    <label htmlFor="employer">Employer</label>
                 </div>
                 <div>
                     <input type="radio" name="radio" id="gigs" />
-                    <label for="gigs">Gigs Enquiry</label>
+                    <label htmlFor="gigs">Gigs Enquiry</label>
                 </div>
             </div>
             <input type="text" name="Message" id="message" placeholder='Message' />
