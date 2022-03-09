@@ -126,7 +126,7 @@
     background: #fff;
     transition: background 2s ease;
 }
-@media only screen  and (max-width: 600px) {
+@media only screen  and (max-width: 1025px) {
     .socials{
         display: none;
     }
