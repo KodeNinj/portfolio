@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className='contact_container'>
          <HeaderDesign linecolor="#453f78" innerText="Contact"/>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam amet ipsum, magnam voluptatum quaerat possimus, corporis repellat inventore aperiam tempora quos itaque odio? Sapiente quibusdam maxime quis, quam blanditiis quo esse? Fuga placeat quo ducimus cumque, reiciendis odit modi magnam.</p>
+         <p>Lorem ipsum, dolor sit amet consec tetur adipisi cing elit. Nam amet ipsum, magnam volup tatum quaerat possimus, corporis repellat invento re aperiam tempora quos itaque odio? Sapiente quibusdam maxime quis, quam blanditiis quo esse? Fuga placeat quo ducimus cumque, reiciendis odit modi magnam.</p>
          <div className="flexme">
          <form action="" className='form'>
              <h4>Let's Work together</h4>
