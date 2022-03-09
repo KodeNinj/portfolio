@@ -1,9 +1,8 @@
-import { GoogleApiWrapper } from 'google-maps-react'
+
 import React from 'react'
 import HeaderDesign from '../Skills/donut'
 import "./contact.css"
-import Mapcontainer from "./Map"
-
+import Map from "./map.jpeg"
 
 const Contact = () => {
   return (
@@ -31,7 +30,7 @@ const Contact = () => {
 
          </form>
          <div className="right">
-             <Mapcontainer/>
+             <div className="img"></div>
          </div>
          </div>
     </div>
